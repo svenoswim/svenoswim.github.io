@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+    <title>Nannas Adventskalender 2016</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+	
+
+
+    <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
+    <!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Hallo Nanna!</h1>
+	
+	<div class="col-xs-12">
+		<div class="col-xs-12 col-md-6 doorarea">
+			<div class="door" role="button" onclick="goToPicture(1);"><div class="color"></div><div class="number">1</div></div>
+			<div class="door" role="button" onclick="goToPicture(2);"><div class="color"></div><div class="number">2</div></div>
+			<div class="door" role="button" onclick="goToPicture(3);"><div class="color"></div><div class="number">3</div></div>
+		</div>
+		<div class="col-xs-12 col-md-6 doorarea">
+			<div class="door" role="button" onclick="goToPicture(4);"><div class="color"></div><div class="number">4</div></div>
+			<div class="door" role="button" onclick="goToPicture(5);"><div class="color"></div><div class="number">5</div></div>
+			<div class="door" role="button" onclick="goToPicture(6);"><div class="color"></div><div class="number">6</div></div>
+		</div>
+	</div>
+	<div class="col-xs-12">	
+		<div class="col-xs-12 col-md-6 doorarea">
+			<div class="door" role="button" onclick="goToPicture(7);"><div class="color"></div><div class="number">7</div></div>
+			<div class="door" role="button" onclick="goToPicture(8);"><div class="color"></div><div class="number">8</div></div>
+			<div class="door" role="button" onclick="goToPicture(9);"><div class="color"></div><div class="number">9</div></div>
+		</div>
+		<div class="col-xs-12 col-md-6 doorarea">
+			<div class="door" role="button" onclick="goToPicture(10);"><div class="color"></div><div class="number">10</div></div>
+			<div class="door" role="button" onclick="goToPicture(11);"><div class="color"></div><div class="number">11</div></div>
+			<div class="door" role="button" onclick="goToPicture(12);"><div class="color"></div><div class="number">12</div></div>
+		</div>
+	</div>
+	
+		<div class="col-xs-12 divclear">
+			<div class="collapse" id="pictureCollapse" aria-expanded="false" >
+			
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+
+				  <!-- Wrapper for slides -->
+				  <div id="display" class="carousel-inner" role="listbox">
+					<div id="day1" class="item active"><img src="img/01start.jpg" alt="1. Dezember"><div class="carousel-caption">Wo es anf&auml;ngt</div></div>
+					<div id="day2" class="item"><img src="img/02wienu.jpg" alt="2. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day3" class="item"><img src="img/03gluck.jpg" alt="3. Dezember"><div class="carousel-caption">numer 3</div></div>
+					<div id="day4" class="item"><img src="img/04bbulm.jpg" alt="4. Dezember"><div class="carousel-caption">numer 4</div></div>
+					<div id="day5" class="item"><img src="img/Untitled-1.jpg" alt="5. Dezember"><div class="carousel-caption">numer 5</div></div>
+					<div id="day6" class="item"><img src="img/Untitled-1.jpg" alt="6. Dezember"><div class="carousel-caption">numer 6</div></div>
+					<div id="day7" class="item"><img src="img/Untitled-1.jpg" alt="7. Dezember"><div class="carousel-caption">numer 7</div></div>
+					<div id="day8" class="item"><img src="img/Untitled-1.jpg" alt="8. Dezember"><div class="carousel-caption">numer 8</div></div>
+					<div id="day9" class="item"><img src="img/Untitled-1.jpg" alt="9. Dezember"><div class="carousel-caption">numer 9</div></div>
+					<div id="day10" class="item"><img src="img/Untitled-1.jpg" alt="10. Dezember"><div class="carousel-caption">numer 10</div></div>
+					<div id="day11" class="item"><img src="img/Untitled-1.jpg" alt="11. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day12" class="item"><img src="img/Untitled-1.jpg" alt="12. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day13" class="item"><img src="img/Untitled-1.jpg" alt="13. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day14" class="item"><img src="img/Untitled-1.jpg" alt="14. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day15" class="item"><img src="img/Untitled-1.jpg" alt="15. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day16" class="item"><img src="img/Untitled-1.jpg" alt="16. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day17" class="item"><img src="img/Untitled-1.jpg" alt="17. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day18" class="item"><img src="img/Untitled-1.jpg" alt="18. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day19" class="item"><img src="img/Untitled-1.jpg" alt="19. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day20" class="item"><img src="img/Untitled-1.jpg" alt="20. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day21" class="item"><img src="img/Untitled-1.jpg" alt="21. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day22" class="item"><img src="img/Untitled-1.jpg" alt="22. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day23" class="item"><img src="img/Untitled-1.jpg" alt="23. Dezember"><div class="carousel-caption">numer 2</div></div>
+					<div id="day24" class="item"><img src="img/Untitled-1.jpg" alt="24. Dezember"><div class="carousel-caption">numer 2</div></div>
+					
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" onclick="setSlide('minus');">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" onclick="setSlide('plus');">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+				</div>
+
+			</div>
+		</div>
+		
+	<div class="col-xs-12">	
+		<div class="col-xs-12 col-md-6 doorarea">
+			<div class="door" role="button" onclick="goToPicture(13);"><div class="color"></div><div class="number">13</div></div>
+			<div class="door" role="button" onclick="goToPicture(14);"><div class="color"></div><div class="number">14</div></div>
+			<div class="door" role="button" onclick="goToPicture(15);"><div class="color"></div><div class="number">15</div></div>
+		</div>
+		<div class="col-xs-12 col-md-6 doorarea">
+			<div class="door" role="button" onclick="goToPicture(16);"><div class="color"></div><div class="number">16</div></div>
+			<div class="door" role="button" onclick="goToPicture(17);"><div class="color"></div><div class="number">17</div></div>
+			<div class="door" role="button" onclick="goToPicture(18);"><div class="color"></div><div class="number">18</div></div>
+		</div>
+	</div>
+	<div class="col-xs-12">
+		<div class="col-xs-12 col-md-6 doorarea">
+			<div class="door" role="button" onclick="goToPicture(19);"><div class="color"></div><div class="number">19</div></div>
+			<div class="door" role="button" onclick="goToPicture(20);"><div class="color"></div><div class="number">20</div></div>
+			<div class="door" role="button" onclick="goToPicture(21);"><div class="color"></div><div class="number">21</div></div>
+		</div>
+		<div class="col-xs-12 col-md-6 doorarea">
+			<div class="door" role="button" onclick="goToPicture(22);"><div class="color"></div><div class="number">22</div></div>
+			<div class="door" role="button" onclick="goToPicture(23);"><div class="color"></div><div class="number">23</div></div>
+			<div class="door" role="button" onclick="goToPicture(24);"><div class="color"></div><div class="number">24</div></div>
+		</div>
+	</div>
+
+    <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Binde alle kompilierten Plugins zusammen ein (wie hier unten) oder such dir einzelne Dateien nach Bedarf aus -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/functions.js"></script>
+  </body>
+</html>
