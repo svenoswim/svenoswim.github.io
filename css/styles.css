@@ -9,6 +9,10 @@
 	position: relative;
 	width: 33.33%;
 }
+.door:hover {
+	//margin: -10px;
+	box-shadow: 0 5px 20px 5px #888888;
+}
 
 .door:before {
 	content: "";
@@ -17,7 +21,7 @@
 }
 
 .door .color {
-		content: "";
+	content: "";
 	display: block;
 	background-color: white;
 	margin: 10px;
@@ -29,17 +33,20 @@ bottom: 0;
 }
 
 .door .number {
+	font-size: 1.5em;
  position: absolute;
-top: 10px;
-left: 10px;
+top: 20px;
+left: 20px;
 right: 10px;
 bottom: 10px;
 }
 
-.picture {
-	
-	width: 480px;
-	height: 240px;
+#pictureCollapse {
+	margin: 15px;
+}
+
+#display div img{
+	margin: auto;
 }
 
 .divclear {
