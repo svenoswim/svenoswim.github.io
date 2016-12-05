@@ -74,7 +74,20 @@ setBackground = function () {
 		"#e0ebf1",
 		"#f0bad4",
 		"#cfe5d0",
-		"#cddec5"
+		"#cddec5",
+		"#cad84d",
+		"#cad84d",
+		"#ecc0db",
+		"#aedeea",
+		"#02a8e2",
+		"#871064",
+		"#ea5d32",
+		"#7170b2",
+		"#00523b",
+		"#55b259",
+		"#5499d2",
+		"#ebf4f9"
+		
 	];
 	
 	$('.color').each(function(i, obj) {
