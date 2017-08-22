@@ -1,0 +1,128 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>On our way to a completely new experience</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+
+<div id="impress">
+
+
+    <div id="start" class="step slide" data-x="-2500" data-y="-500">
+		<q class="left">Wir</q>
+		<q class="center">Reise</q>
+		<q class="right">Aufgaben</q>
+        <!--q>Wir sind unterwegs auf einer Reise mit vielen Aufgaben</q-->
+    </div>
+	
+	<div id="nr1" class="step slide" data-x="-1500" data-y="-1650">
+		<img src="pics/nr1.JPG" alt="" width="780">
+	</div>
+	
+	<div id="steinchen" class="step slide diamant" data-x="0" data-y="-2250">
+		<img src="pics/stein.JPG" alt="" width="780">
+	</div>
+	
+	<div id="heute" class="step slide" data-x="1500" data-y="-1650">
+		<img src="pics/heute.JPG" alt="" width="780">
+	</div>
+
+	
+	<div id="definition" class="step" data-x="2500" data-y="-500">
+        <p>Nach reiflicher Überlegung <br/> braucht es eine neue Definition von <br><b>richtig</b></p>
+	</div>
+
+	<div id="zusammen" class="step" data-x="2500" data-y="500">
+        <p>Ich<br/> möchte gerne <br><b class="positioning">richtig</b><br> mit dir zusammen sein</p>
+	</div>
+
+	
+	<div id="firsts" class="step slide" data-x="1650" data-y="1650">
+		<img src="pics/firsts.jpg" alt="" width="780">
+	</div>
+	
+	<div id="lotr" class="step slide" data-x="0" data-y="2250">
+		<img src="pics/lotr.jpg" alt="" width="780">
+		<p>&nbsp;</p>
+		<p class="virtual">Mein virtueller "Herr der Ringe" kleiner Hobbit-Ring</p>
+	</div>
+	
+	<div id="ring" class="step slide" data-x="-1650" data-y="1650">
+		<img src="pics/ring.JPG" alt="" width="780">
+	</div>
+	
+	<div id="loving" class="step" data-x="-2250" data-y="500">
+        <p>Ich<br/> liebe <span class="brighter">es</span> <br><b class="positioning">dich</b><br> <span class="brighter">glücklich zu machen</span></p>
+	</div>
+	
+	
+	
+	
+	
+	<div id="big" class="step" data-x="0" data-y="0" data-scale="4">
+		<p><span class="question">Willst du </span><b>mich</b> <span class="thoughts">heiraten?</span></p>
+	</div>
+	
+    <!--
+        
+        So to summarize of all the possible attributes used to position presentation steps, we have:
+        
+        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+            the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+            are exactly the same;
+        * `data-scale` - defines the scale of step element; default value is 1
+        
+        These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+        
+    -->
+    <div id="overview" class="step" data-x="0" data-y="0" data-scale="5">
+    </div>
+
+</div>
+
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+</body>
+</html>
+
+
